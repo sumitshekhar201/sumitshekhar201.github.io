@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    /* Apply the saved theme before first paint to avoid a flash of the wrong colours. */
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { /* storage unavailable: follow the system setting */ }
+    })();
+  </script>
+
+  <title>Sumit Shekhar | Video Editor, Creator and Aspiring Developer</title>
+  <meta name="description" content="Sumit Shekhar is a video editor, creator and aspiring developer. Selected projects, video editing work, skills and contact details.">
+  <meta name="author" content="Sumit Shekhar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sshekhar.in/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sumit Shekhar">
+  <meta property="og:title" content="Sumit Shekhar | Video Editor, Creator and Aspiring Developer">
+  <meta property="og:description" content="Selected projects, video editing work, skills and contact details.">
+  <meta property="og:url" content="https://sshekhar.in/">
+  <!-- Add a 1200x630 image at assets/images/og-image.jpg, then uncomment the next line:
+  <meta property="og:image" content="https://sshekhar.in/assets/images/og-image.jpg"> -->
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sumit Shekhar",
+    "url": "https://sshekhar.in/",
+    "jobTitle": "Video Editor",
+    "description": "Video editor, creator and aspiring developer."
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sumit Shekhar, back to top">Sumit Shekhar</a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#videos">Video</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
+      <span aria-hidden="true" class="theme-icon">◐</span>
+      <span class="theme-label">Theme</span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO ---------------------------------------------------------- -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Video editor · Creator · Aspiring developer</p>
+      <h1 id="hero-title">Sumit Shekhar</h1>
+      <p class="lede">
+        I'm a video editor and creator, and an aspiring developer. I shape raw footage into clear,
+        engaging stories, and I'm learning to build the digital tools behind the work.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#videos">View video work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- 2. SELECTED PROJECTS -------------------------------------------- -->
+    <!-- EDIT: change the title, description, tags and screenshot for each project.
+         Replace the src with your screenshot, e.g. assets/images/project-1.jpg,
+         and keep the alt text descriptive. -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <header class="section-head">
+        <h2 id="projects-title">Selected projects</h2>
+        <p>A few projects I'm proud of. Each one shows the problem, my role and the result.</p>
+      </header>
+
+      <article class="project">
+        <figure class="project-media">
+          <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+               alt="Placeholder screenshot for project one. Replace with a real screenshot.">
+        </figure>
+        <div class="project-body">
+          <p class="project-index" aria-hidden="true">01</p>
+          <h3>[Project one title]</h3>
+          <p>[Two to three sentences: what the project was, what you did, and what it achieved. Only state results you can verify.]</p>
+          <ul class="tags" aria-label="Tools used">
+            <li>[Tool]</li>
+            <li>[Tool]</li>
+          </ul>
+          <p class="project-links">
+            <span class="pending">Live link: add when ready</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="project-media">
+          <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+               alt="Placeholder screenshot for project two. Replace with a real screenshot.">
+        </figure>
+        <div class="project-body">
+          <p class="project-index" aria-hidden="true">02</p>
+          <h3>[Project two title]</h3>
+          <p>[Two to three sentences describing the project, your role and the outcome.]</p>
+          <ul class="tags" aria-label="Tools used">
+            <li>[Tool]</li>
+            <li>[Tool]</li>
+          </ul>
+          <p class="project-links">
+            <span class="pending">Source or live link: add when ready</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="project-media">
+          <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+               alt="Placeholder screenshot for project three. Replace with a real screenshot.">
+        </figure>
+        <div class="project-body">
+          <p class="project-index" aria-hidden="true">03</p>
+          <h3>[Project three title]</h3>
+          <p>[Two to three sentences describing the project, your role and the outcome.]</p>
+          <ul class="tags" aria-label="Tools used">
+            <li>[Tool]</li>
+          </ul>
+          <p class="project-links">
+            <span class="pending">Live link: add when ready</span>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. VIDEO EDITING PORTFOLIO --------------------------------------- -->
+    <!-- EDIT: replace each thumbnail with a 16:9 still from your work and
+         fill in the title, category and length. Use the video link when you have one. -->
+    <section id="videos" class="section" aria-labelledby="videos-title">
+      <header class="section-head">
+        <h2 id="videos-title">Video editing</h2>
+        <p>Selected edits across short-form, long-form and motion work.</p>
+      </header>
+
+      <div class="video-grid">
+        <figure class="video-item">
+          <div class="video-thumb">
+            <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+                 alt="Placeholder thumbnail for video one.">
+          </div>
+          <figcaption>
+            <span class="video-title">[Video title]</span>
+            <span class="video-meta">[Category] · [Length]</span>
+          </figcaption>
+        </figure>
+
+        <figure class="video-item">
+          <div class="video-thumb">
+            <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+                 alt="Placeholder thumbnail for video two.">
+          </div>
+          <figcaption>
+            <span class="video-title">[Video title]</span>
+            <span class="video-meta">[Category] · [Length]</span>
+          </figcaption>
+        </figure>
+
+        <figure class="video-item">
+          <div class="video-thumb">
+            <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+                 alt="Placeholder thumbnail for video three.">
+          </div>
+          <figcaption>
+            <span class="video-title">[Video title]</span>
+            <span class="video-meta">[Category] · [Length]</span>
+          </figcaption>
+        </figure>
+
+        <figure class="video-item">
+          <div class="video-thumb">
+            <img src="assets/images/placeholder-16x9.svg" width="1600" height="900" loading="lazy"
+                 alt="Placeholder thumbnail for video four.">
+          </div>
+          <figcaption>
+            <span class="video-title">[Video title]</span>
+            <span class="video-meta">[Category] · [Length]</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="note">Video links will be added here once your work is ready to share.</p>
+    </section>
+
+    <!-- 4. SKILLS AND TOOLS --------------------------------------------- -->
+    <!-- EDIT: replace the bracketed items with the tools you actually use. -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <header class="section-head">
+        <h2 id="skills-title">Skills and tools</h2>
+      </header>
+      <div class="skills-grid">
+        <div>
+          <h3>Video editing</h3>
+          <ul>
+            <li>[Editing software]</li>
+            <li>[Colour grading tool]</li>
+            <li>[Audio tool]</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Motion and graphics</h3>
+          <ul>
+            <li>[Motion graphics tool]</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Creative and AI workflows</h3>
+          <ul>
+            <li>[AI tool for editing or ideation]</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Web development (learning)</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ABOUT --------------------------------------------------------- -->
+    <!-- EDIT: write in your own voice. Keep to facts you can stand behind. -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <header class="section-head">
+        <h2 id="about-title">About</h2>
+      </header>
+      <div class="about">
+        <p>
+          I'm Sumit Shekhar, a video editor and creator working on [type of content, for example short-form
+          videos, documentaries or brand films]. I'm also an aspiring developer, learning how to build
+          digital products on the web.
+        </p>
+        <p>
+          [Add two or three sentences about how you got into editing, what you enjoy most about it, and the
+          kind of work you want to do next.]
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT ------------------------------------------------------- -->
+    <!-- Contact details are set in the CONFIG object at the top of script.js. -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <header class="section-head">
+        <h2 id="contact-title">Contact</h2>
+        <p>Get in touch about editing projects, collaborations or development work.</p>
+      </header>
+      <ul class="contact-list">
+        <li><span class="contact-label">Email</span> <span data-contact="email">[Add email address]</span></li>
+        <li><span class="contact-label">Phone</span> <span data-contact="phone">[Add phone number]</span></li>
+        <li><span class="contact-label">YouTube</span> <span data-contact="youtube">[Add channel link]</span></li>
+        <li><span class="contact-label">LinkedIn</span> <span data-contact="linkedin">[Add profile link]</span></li>
+        <li><span class="contact-label">Instagram</span> <span data-contact="instagram">[Add profile link]</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Sumit Shekhar</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
